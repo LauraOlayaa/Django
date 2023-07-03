@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.6.4.min.js"></script>
+  </head>
+
+  <body>
+
+    <nav>
+      <div class="logo">
+          <a href="#"><img src="img/Logo1080-300x300.png" width="75px"   alt="logo"> </a>
+          <h1 class="textoi">TALLER GARAJE EXPRESS</h1>
+      </div>
+      <ul>
+          <li><a href="index.html">Pagina Principal</a></li>
+          <li><a href="visionymision.html">Quienes Somos</a></li>
+          <li><a href="galeriadefotos.html">Galeria de fotos</a></li>
+          <li><a href="formulario.html">Formulario</a></li>
+          <li><a href="mapa.html">Ubicacion</a></li>
+      </ul>
+<br>
+<br>
+    <h2 class="formulario__titulo">Formulario ingreso de autos</h2>
+    <form id= "formulario_carta"    class="formulariooo" > 
+
+        <label for="rut" class="formulario__label">Rut</label>
+        <input type="number" id="rut" minlength="9" maxlength="10"  class="formulario__input" required/>
+        
+        <br>
+
+        <label for="nombre" class="formulario__label">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" minlength="3" maxlength="20" class="formulario__input" required/> 
+        
+        <br>
+
+        <span for="apellido_paterno class="formulario__label">Apellido Paterno</span>
+        <input type="text" id="apellido_paterno" name="apellido" placeholder="Apellido" min="3" max="20"  class="formulario__input" required/> 
+        
+        <br> 
+
+        <span for="apellido_materno" class="formulario_label">Apellido Materno</span>
+        <input type="text" id="apellido_materno" name="apellido" placeholder="Apellido" min="3" max="20"  class="formulario__input" required/> 
+        
+        <br>
+        
+      
+        
+        <br>
+
+        <label for="genero" class="formulario__label">Genero</label>
+        
+        <select name="genero" id="genero" class="formulario__input" required> 
+          <option value="femenino" >Femenino</option required>
+          <option value="masculino">Masculino</option required>
+        </select>
+        
+        <br>
+        
+
+        <label for="correo" class="formulario__label">Email:</label>
+        <input type="email" id="correo" name="correo" placeholder="Ingrese email"  class="formulario__input" required>
+        
+        <br>
+        
+        <lspan for="fecha" class="formulario__label">Fecha Nacimiento</span>
+        <input type="date" id="fecha_nacimiento"    name="fecha"  class="formulario__input" required>
+        
+        <br>
+
+        <label for="numero" class="formulario__label">Celular</label>
+        <input type="number" id="numero" min="000000000" max="999999999"  class="formulario__input"required/>
+        
+        <br>
+
+        <label for="direccion" class="formulario__label">Direccion</label>
+        <input type="text" id="direccion" name="direccion" placeholder="direccion"  class="formulario__input" required/> 
+        
+        
+
+        <br>
+
+        <button type="submit" class="formulario__submit" onclick="captura()">Enviar</button>
+
+
+    </form>
+    <div > 
+      
+    </div>
+
+    <script src="form.js"></script>
+  </body>
+</html>
